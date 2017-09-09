@@ -1,10 +1,9 @@
 ## Typescript features
 
-Demonstrating outstanding fatures of typescript
+Demonstrating outstanding fetures of typescript
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This project is just for educating fellow developers.
 
 ### Prerequisites
 
@@ -26,12 +25,8 @@ npm install
 
 ### Debug the code
 
-best way to understand is to debug using VScode.
+Best way to understand is to debug using VScode.
 It's extension "debug for chrome" will be required for it.
-
-## Deployment
-
-Its for demonstration purpose only
 
 ## Authors
 
@@ -39,4 +34,4 @@ Its for demonstration purpose only
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+The underlying source code is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
