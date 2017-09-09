@@ -1,0 +1,10 @@
+# ignore node node_modules #
+/node_modules/
+
+# bundle #
+/dist
+
+npm-debug.log
+
+# IDE files #
+/.vscode 
