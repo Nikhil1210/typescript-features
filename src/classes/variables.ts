@@ -105,8 +105,9 @@ export class VarDemo {
         // Typescript and ES6 way of doing the same
         this.var2 = "bind this";
         setTimeout(function() {
-            console.log(this);
-            console.log(this.var2);
-        }.bind(this), 200);
+            // let instance: VarDemo = this as VarDemo;
+            // let temp : string= this.var2;
+        }.bind(this as VarDemo), 200);
     }
 }
+ 

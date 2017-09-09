@@ -33,8 +33,8 @@ export class FunctionsDemo{
         const emp2 =this.library.BooksReadByEmployee("emp2", "oracle", "React");
 
         // Function Overloading
-        const booksByAuthor: IBook[] = this.library.GetBooks("john Doe");
-        const booksByAvailibilty: IBook[] = this.library.GetBooks(true);
+        const booksByAuthor: IBook[] = this.library.GetBooks("john Doe") as IBook[];
+        const booksByAvailibilty: IBook[] = this.library.GetBooks(true) as IBook[];
 
         // command line as a string
         let options: IRunOptions = { program:"test", commandline: "hello"};
@@ -42,8 +42,8 @@ export class FunctionsDemo{
 
         // commandline as a string array
         options= {program: "p2", commandline: ["hello", "world"]};
-        const cmd2 = options.commandline[0];
-        const cmd3 = options.commandline[1];
+        // const cmd2:string[] = options.commandline[0] as string[];
+        // const cmd3: string = options.commandline[1] as string;
 
         // commandline a sa funcion paramater
         options = {program : "test1", commandline : () => "** Hello world **" };
