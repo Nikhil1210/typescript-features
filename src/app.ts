@@ -3,6 +3,7 @@ import {FunctionsDemo} from "./classes/functions";
 import {XYZBank} from "./model/Company";
 import {Generics} from "./classes/generics";
 import {TypesDemo} from "./classes/types";
+import KeyofDemo from "./classes/keyOf";
 
 document.write("<h1> Welcome to typescript!! </h1>");
 // Demonstration of various types 
@@ -26,3 +27,6 @@ const gen=new Generics();
 
 // Types demo
 const typ = new TypesDemo();
+
+// Keyof demo
+const varKeyof = new KeyofDemo();
