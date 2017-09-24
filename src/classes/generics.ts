@@ -7,9 +7,9 @@ export class Generics {
     constructor() {
 
     // generic functions
-    const genString: string =  this.LogAndReturn<string>("logging string");
+   // const genString: string =  this.LogAndReturn<string>("logging string"); Restricted by generics
     const genNumber: number = this.LogAndReturn<number>(22);
-    const newLibrary :Library = new Library("Socgen library");
+    const newLibrary : Library = new Library("Socgen library");
     const genObj : Library = this.LogAndReturn<Library>(newLibrary);
 
     const math= new Maths<number>();
@@ -30,7 +30,7 @@ export class Generics {
     /**
      * LogAndReturn generic input
      */
-    public LogAndReturn<T>(input: T): T {
+    public LogAndReturn<T extends Library | number>(input: T): T {
         console.log(input);
         return input;
     }

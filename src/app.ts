@@ -16,6 +16,11 @@ const company = new XYZBank("Bank of America", "Charlotte");
 company.setLineOfBusiness(["Retail", "Investment", "private"]);
 console.log(company.GetLineOfBusiness());
 
+// Dynamic imports
+function LoadDynamic() {
+    import ("./classes/dynamicImport");
+}
+LoadDynamic();
 // generics
 const gen=new Generics();
 

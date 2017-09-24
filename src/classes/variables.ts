@@ -22,7 +22,8 @@ export class VarDemo {
         console.log(`Fourth element: ${tuple[3]}`);
 
         // Type casting
-        const someNum :number = 44.65;
+        const someNum: number = 44.65;
+        const abcewe = someNum;
         const someString:string = someNum.toString();
         const otherString: string = someNum + "";
 
