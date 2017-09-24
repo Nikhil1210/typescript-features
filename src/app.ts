@@ -1,13 +1,14 @@
-import {VarDemo} from "./classes/variables";
+import {Point, ThirdDimension} from "./classes/dynamicExtendClasses";
 import {FunctionsDemo} from "./classes/functions";
-import {XYZBank} from "./model/Company";
 import {Generics} from "./classes/generics";
-import {TypesDemo} from "./classes/types";
 import KeyofDemo from "./classes/keyOf";
+import {TypesDemo} from "./classes/types";
+import {VarDemo} from "./classes/variables";
+import {XYZBank} from "./model/Company";
 
 document.write("<h1> Welcome to typescript!! </h1>");
-// Demonstration of various types 
-const varDemo:VarDemo = new VarDemo();
+// Demonstration of various types
+const varDemo: VarDemo = new VarDemo();
 
 // Demo of various function features
 const funcDemo = new FunctionsDemo();
@@ -30,3 +31,8 @@ const typ = new TypesDemo();
 
 // Keyof demo
 const varKeyof = new KeyofDemo();
+
+// Dynamically extend classes
+const Point3D = ThirdDimension(Point);
+const p = new Point3D();
+p.z = -1;
